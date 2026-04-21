@@ -1,4 +1,5 @@
 #!/bin/bash
+# 기존의 도커 제거
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do apt-get remove $pkg; done
 rm -rf /var/lib/docker
 rm -rf /var/lib/containerd
