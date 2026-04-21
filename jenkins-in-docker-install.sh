@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# 에러 발생 시 즉시 중단
+set -e
+
 # 기존의 도커 제거
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do apt-get remove $pkg; done
 rm -rf /var/lib/docker
