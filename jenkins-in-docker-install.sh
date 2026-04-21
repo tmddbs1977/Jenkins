@@ -4,7 +4,10 @@
 set -e
 
 # 기존의 도커 제거
-for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do apt-get remove $pkg; done
+for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do 
+    apt-get remove -y $pkg || true 
+done
+
 rm -rf /var/lib/docker
 rm -rf /var/lib/containerd
 apt-get update -y
