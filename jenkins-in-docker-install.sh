@@ -11,7 +11,7 @@ done
 rm -rf /var/lib/docker
 rm -rf /var/lib/containerd
 apt-get update -y
-apt-get install -y ca-certificates curl
+apt-get install -y zip ca-certificates curl
 install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
 chmod a+r /etc/apt/keyrings/docker.asc
