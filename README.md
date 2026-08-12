@@ -1,4 +1,4 @@
-# Jenkins Docker 환경
+# Jenkins Docker
 
 AWS IaC 및 CI/CD 프로젝트에서 Jenkins 서버를 Docker 기반으로 구성하기 위한 저장소입니다.
 
